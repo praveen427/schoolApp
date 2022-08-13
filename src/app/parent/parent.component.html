@@ -1,0 +1,23 @@
+
+<div class="row">
+    <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" routerLink="attend" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Attendance</a>
+        <a class="list-group-item list-group-item-action" routerLink="marks" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Marks</a>
+        <a class="list-group-item list-group-item-action" routerLink="time" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Time table of classes</a>
+    </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <router-outlet></router-outlet>
+              </h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
